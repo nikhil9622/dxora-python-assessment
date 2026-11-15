@@ -1,0 +1,33 @@
+[project]
+name = "automated-posting"
+version = "1.0.0"
+description = "Automated Multi-Platform Posting System (FastAPI)"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Belide Nikhil Chandan" }
+]
+dependencies = [
+    "fastapi>=0.115,<1.0",
+    "uvicorn[standard]>=0.30",
+    "httpx>=0.27",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "respx>=0.21",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]

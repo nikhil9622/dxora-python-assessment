@@ -1,0 +1,50 @@
+{
+  "success": true,
+  "results": [
+    {
+      "platform": "mastodon",
+      "status": "success",
+      "posted_url": "https://mastodon.social/@yourname/111871234567890123",
+      "public_access": true,
+      "date": "2026-11-15",
+      "time": "10:30:00",
+      "error": null
+    },
+    {
+      "platform": "bluesky",
+      "status": "success",
+      "posted_url": "https://bsky.app/profile/yourname.bsky.social/post/3kabcd1234xyz",
+      "public_access": true,
+      "date": "2026-11-15",
+      "time": "10:30:00",
+      "error": null
+    },
+    {
+      "platform": "telegram",
+      "status": "success",
+      "posted_url": "https://t.me/yourchannel/58",
+      "public_access": true,
+      "date": "2026-11-15",
+      "time": "10:30:00",
+      "error": null
+    },
+    {
+      "platform": "discord",
+      "status": "success",
+      "posted_url": null,
+      "public_access": false,
+      "date": "2026-11-15",
+      "time": "10:30:00",
+      "error": null
+    },
+    {
+      "platform": "devto",
+      "status": "failed",
+      "posted_url": null,
+      "public_access": false,
+      "date": null,
+      "time": null,
+      "error": "HTTP 422: {\"error\":\"Title has already been used by you.\"}"
+    }
+  ]
+}
