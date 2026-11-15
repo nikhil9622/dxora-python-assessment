@@ -183,8 +183,19 @@ curl -s -X POST http://localhost:4000/posting \
   -d @samples/request.json | python -m json.tool
 ```
 
-> **Screenshots / logs:** add your own run screenshots to `docs/` (e.g. the
-> `/docs` page and a real multi-platform response). See `docs/README.md`.
+### Live proof
+
+A real run (Mastodon, Discord, DEV.to configured; Bluesky and Telegram left
+unconfigured to show independent handling) published successfully to all three.
+Screenshots and the exact JSON response are in [`docs/`](docs/README.md):
+
+| Platform | Evidence |
+|----------|----------|
+| Mastodon | [`docs/screenshot-mastodon.png`](docs/screenshot-mastodon.png) · [post](https://mastodon.social/@niki_31_9622/117619389646749087) |
+| DEV.to | [`docs/screenshot-devto.png`](docs/screenshot-devto.png) · [post](https://dev.to/nikhilchandan_486bc60e209/big-news-our-new-pricing-plans-are-live-see-them-here-4kga) |
+| Discord | [`docs/screenshot-discord.png`](docs/screenshot-discord.png) |
+
+Full response log: [`docs/live-response.json`](docs/live-response.json).
 
 ## Design notes
 

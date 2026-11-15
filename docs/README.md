@@ -1,17 +1,23 @@
 # Screenshots & logs
 
-Add evidence of the running application here (the assignment asks for
-screenshots or logs). Suggested captures:
+Proof of a real `POST /posting` run on 2026-11-15 with Mastodon, Discord and
+DEV.to configured. Bluesky and Telegram were intentionally left unconfigured to
+show that one platform's absence/failure does not stop the others.
 
-1. `docs_swagger.png` — the interactive API docs at http://localhost:4000/docs
-2. `response_live.png` — a real `POST /posting` response with at least one
-   platform showing `status: success` and a working `posted_url`.
-3. `terminal_run.png` — the uvicorn startup log.
+The exact API response from this run is saved in
+[`live-response.json`](live-response.json) (`success: true`, three platforms
+`success`, two honest `not configured`).
 
-A quick way to capture a response as a log file:
+## Mastodon — published (public)
+![Mastodon post](screenshot-mastodon.png)
 
-```bash
-curl -s -X POST http://localhost:4000/posting \
-  -H "Content-Type: application/json" \
-  -d @samples/request.json | python -m json.tool | tee docs/response_live.txt
-```
+## DEV.to — published article
+![DEV.to post](screenshot-devto.png)
+
+## Discord — delivered to channel
+![Discord message](screenshot-discord.png)
+
+Live links from this run:
+- Mastodon: https://mastodon.social/@niki_31_9622/117619389646749087
+- DEV.to: https://dev.to/nikhilchandan_486bc60e209/big-news-our-new-pricing-plans-are-live-see-them-here-4kga
+- Discord: delivered to the server channel (webhook posts have no public permalink)

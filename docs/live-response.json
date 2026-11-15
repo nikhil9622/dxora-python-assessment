@@ -1,0 +1,51 @@
+{
+  "_note": "Actual response from POST http://localhost:4000/posting on 2026-11-15, with Mastodon, Discord and DEV.to credentials configured (Bluesky and Telegram intentionally left unconfigured to demonstrate independent failure handling).",
+  "success": true,
+  "results": [
+    {
+      "platform": "mastodon",
+      "status": "success",
+      "posted_url": "https://mastodon.social/@niki_31_9622/117619389646749087",
+      "public_access": true,
+      "date": "2026-11-15",
+      "time": "07:57:37",
+      "error": null
+    },
+    {
+      "platform": "bluesky",
+      "status": "failed",
+      "posted_url": null,
+      "public_access": false,
+      "date": null,
+      "time": null,
+      "error": "not configured: required environment variables are not set"
+    },
+    {
+      "platform": "telegram",
+      "status": "failed",
+      "posted_url": null,
+      "public_access": false,
+      "date": null,
+      "time": null,
+      "error": "not configured: required environment variables are not set"
+    },
+    {
+      "platform": "discord",
+      "status": "success",
+      "posted_url": null,
+      "public_access": false,
+      "date": "2026-11-15",
+      "time": "07:57:37",
+      "error": null
+    },
+    {
+      "platform": "devto",
+      "status": "success",
+      "posted_url": "https://dev.to/nikhilchandan_486bc60e209/big-news-our-new-pricing-plans-are-live-see-them-here-4kga",
+      "public_access": true,
+      "date": "2026-11-15",
+      "time": "07:57:37",
+      "error": null
+    }
+  ]
+}
